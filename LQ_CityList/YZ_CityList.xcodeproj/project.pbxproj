@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23C5AEA1AAAA00A0022AEBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AE91AAAA00A0022AEBA /* Foundation.framework */; };
+		C23C5AEC1AAAA00A0022AEBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AEB1AAAA00A0022AEBA /* CoreGraphics.framework */; };
+		C23C5AEE1AAAA00A0022AEBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AED1AAAA00A0022AEBA /* UIKit.framework */; };
+		C23C5AF01AAAA00A0022AEBA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AEF1AAAA00A0022AEBA /* CoreData.framework */; };
+		C23C5AF61AAAA00A0022AEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23C5AF41AAAA00A0022AEBA /* InfoPlist.strings */; };
+		C23C5AF81AAAA00A0022AEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5AF71AAAA00A0022AEBA /* main.m */; };
+		C23C5AFC1AAAA00A0022AEBA /* kAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5AFB1AAAA00A0022AEBA /* kAppDelegate.m */; };
+		C23C5AFF1AAAA00A0022AEBA /* YZ_CityList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C23C5AFD1AAAA00A0022AEBA /* YZ_CityList.xcdatamodeld */; };
+		C23C5B011AAAA00A0022AEBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23C5B001AAAA00A0022AEBA /* Images.xcassets */; };
+		C23C5B081AAAA00A0022AEBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5B071AAAA00A0022AEBA /* XCTest.framework */; };
+		C23C5B091AAAA00A0022AEBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AE91AAAA00A0022AEBA /* Foundation.framework */; };
+		C23C5B0A1AAAA00A0022AEBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AED1AAAA00A0022AEBA /* UIKit.framework */; };
+		C23C5B0B1AAAA00A0022AEBA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23C5AEF1AAAA00A0022AEBA /* CoreData.framework */; };
+		C23C5B131AAAA00A0022AEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23C5B111AAAA00A0022AEBA /* InfoPlist.strings */; };
+		C23C5B151AAAA00A0022AEBA /* YZ_CityListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B141AAAA00A0022AEBA /* YZ_CityListTests.m */; };
+		C23C5B251AAAA05C0022AEBA /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = C23C5B221AAAA05C0022AEBA /* cities.json */; };
+		C23C5B261AAAA05C0022AEBA /* YZ_CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B241AAAA05C0022AEBA /* YZ_CityModel.m */; };
+		C23C5B281AAAA09B0022AEBA /* YZ_HotCityListBtton.png in Resources */ = {isa = PBXBuildFile; fileRef = C23C5B271AAAA09B0022AEBA /* YZ_HotCityListBtton.png */; };
+		C23C5B2B1AAAA1030022AEBA /* YZ_CityListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B2A1AAAA1030022AEBA /* YZ_CityListTVC.m */; };
+		C23C5B301AAAA1870022AEBA /* YZ_HotCityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B2D1AAAA1870022AEBA /* YZ_HotCityTableViewCell.m */; };
+		C23C5B311AAAA1870022AEBA /* YZ_RecentlyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B2F1AAAA1870022AEBA /* YZ_RecentlyTableViewCell.m */; };
+		C23C5B351AAAA29B0022AEBA /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B341AAAA29B0022AEBA /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C23C5B3B1AAACDB50022AEBA /* YZ_TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B3A1AAACDB50022AEBA /* YZ_TextViewController.m */; };
+		C23C5B3D1AAAE48F0022AEBA /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = C23C5B3C1AAAE48F0022AEBA /* cities.plist */; };
+		C23C5B401AAAE64C0022AEBA /* YZ_CitySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23C5B3F1AAAE64C0022AEBA /* YZ_CitySearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C23C5B0C1AAAA00A0022AEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23C5ADE1AAAA00A0022AEBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23C5AE51AAAA00A0022AEBA;
+			remoteInfo = YZ_CityList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C23C5AE61AAAA00A0022AEBA /* YZ_CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZ_CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23C5AE91AAAA00A0022AEBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C23C5AEB1AAAA00A0022AEBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C23C5AED1AAAA00A0022AEBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C23C5AEF1AAAA00A0022AEBA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C23C5AF31AAAA00A0022AEBA /* YZ_CityList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YZ_CityList-Info.plist"; sourceTree = "<group>"; };
+		C23C5AF51AAAA00A0022AEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23C5AF71AAAA00A0022AEBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23C5AF91AAAA00A0022AEBA /* YZ_CityList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YZ_CityList-Prefix.pch"; sourceTree = "<group>"; };
+		C23C5AFA1AAAA00A0022AEBA /* kAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kAppDelegate.h; sourceTree = "<group>"; };
+		C23C5AFB1AAAA00A0022AEBA /* kAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kAppDelegate.m; sourceTree = "<group>"; };
+		C23C5AFE1AAAA00A0022AEBA /* YZ_CityList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YZ_CityList.xcdatamodel; sourceTree = "<group>"; };
+		C23C5B001AAAA00A0022AEBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C23C5B061AAAA00A0022AEBA /* YZ_CityListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZ_CityListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23C5B071AAAA00A0022AEBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C23C5B101AAAA00A0022AEBA /* YZ_CityListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YZ_CityListTests-Info.plist"; sourceTree = "<group>"; };
+		C23C5B121AAAA00A0022AEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23C5B141AAAA00A0022AEBA /* YZ_CityListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZ_CityListTests.m; sourceTree = "<group>"; };
+		C23C5B221AAAA05C0022AEBA /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		C23C5B231AAAA05C0022AEBA /* YZ_CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_CityModel.h; sourceTree = "<group>"; };
+		C23C5B241AAAA05C0022AEBA /* YZ_CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_CityModel.m; sourceTree = "<group>"; };
+		C23C5B271AAAA09B0022AEBA /* YZ_HotCityListBtton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YZ_HotCityListBtton.png; sourceTree = "<group>"; };
+		C23C5B291AAAA1030022AEBA /* YZ_CityListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_CityListTVC.h; sourceTree = "<group>"; };
+		C23C5B2A1AAAA1030022AEBA /* YZ_CityListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_CityListTVC.m; sourceTree = "<group>"; };
+		C23C5B2C1AAAA1870022AEBA /* YZ_HotCityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_HotCityTableViewCell.h; sourceTree = "<group>"; };
+		C23C5B2D1AAAA1870022AEBA /* YZ_HotCityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_HotCityTableViewCell.m; sourceTree = "<group>"; };
+		C23C5B2E1AAAA1870022AEBA /* YZ_RecentlyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_RecentlyTableViewCell.h; sourceTree = "<group>"; };
+		C23C5B2F1AAAA1870022AEBA /* YZ_RecentlyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_RecentlyTableViewCell.m; sourceTree = "<group>"; };
+		C23C5B331AAAA29B0022AEBA /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		C23C5B341AAAA29B0022AEBA /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		C23C5B391AAACDB50022AEBA /* YZ_TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_TextViewController.h; sourceTree = "<group>"; };
+		C23C5B3A1AAACDB50022AEBA /* YZ_TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_TextViewController.m; sourceTree = "<group>"; };
+		C23C5B3C1AAAE48F0022AEBA /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		C23C5B3E1AAAE64C0022AEBA /* YZ_CitySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZ_CitySearchViewController.h; sourceTree = "<group>"; };
+		C23C5B3F1AAAE64C0022AEBA /* YZ_CitySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZ_CitySearchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23C5AE31AAAA00A0022AEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5AEC1AAAA00A0022AEBA /* CoreGraphics.framework in Frameworks */,
+				C23C5AF01AAAA00A0022AEBA /* CoreData.framework in Frameworks */,
+				C23C5AEE1AAAA00A0022AEBA /* UIKit.framework in Frameworks */,
+				C23C5AEA1AAAA00A0022AEBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23C5B031AAAA00A0022AEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5B081AAAA00A0022AEBA /* XCTest.framework in Frameworks */,
+				C23C5B0B1AAAA00A0022AEBA /* CoreData.framework in Frameworks */,
+				C23C5B0A1AAAA00A0022AEBA /* UIKit.framework in Frameworks */,
+				C23C5B091AAAA00A0022AEBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23C5ADD1AAAA00A0022AEBA = {
+			isa = PBXGroup;
+			children = (
+				C23C5B3E1AAAE64C0022AEBA /* YZ_CitySearchViewController.h */,
+				C23C5B3F1AAAE64C0022AEBA /* YZ_CitySearchViewController.m */,
+				C23C5B391AAACDB50022AEBA /* YZ_TextViewController.h */,
+				C23C5B3A1AAACDB50022AEBA /* YZ_TextViewController.m */,
+				C23C5B1E1AAAA03B0022AEBA /* YZ_CitysList */,
+				C23C5B321AAAA29B0022AEBA /* JsonKit */,
+				C23C5AF11AAAA00A0022AEBA /* YZ_CityList */,
+				C23C5B0E1AAAA00A0022AEBA /* YZ_CityListTests */,
+				C23C5AE81AAAA00A0022AEBA /* Frameworks */,
+				C23C5AE71AAAA00A0022AEBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23C5AE71AAAA00A0022AEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5AE61AAAA00A0022AEBA /* YZ_CityList.app */,
+				C23C5B061AAAA00A0022AEBA /* YZ_CityListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23C5AE81AAAA00A0022AEBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5AE91AAAA00A0022AEBA /* Foundation.framework */,
+				C23C5AEB1AAAA00A0022AEBA /* CoreGraphics.framework */,
+				C23C5AED1AAAA00A0022AEBA /* UIKit.framework */,
+				C23C5AEF1AAAA00A0022AEBA /* CoreData.framework */,
+				C23C5B071AAAA00A0022AEBA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C23C5AF11AAAA00A0022AEBA /* YZ_CityList */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5AFA1AAAA00A0022AEBA /* kAppDelegate.h */,
+				C23C5AFB1AAAA00A0022AEBA /* kAppDelegate.m */,
+				C23C5B001AAAA00A0022AEBA /* Images.xcassets */,
+				C23C5AFD1AAAA00A0022AEBA /* YZ_CityList.xcdatamodeld */,
+				C23C5AF21AAAA00A0022AEBA /* Supporting Files */,
+			);
+			path = YZ_CityList;
+			sourceTree = "<group>";
+		};
+		C23C5AF21AAAA00A0022AEBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5AF31AAAA00A0022AEBA /* YZ_CityList-Info.plist */,
+				C23C5AF41AAAA00A0022AEBA /* InfoPlist.strings */,
+				C23C5AF71AAAA00A0022AEBA /* main.m */,
+				C23C5AF91AAAA00A0022AEBA /* YZ_CityList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23C5B0E1AAAA00A0022AEBA /* YZ_CityListTests */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B141AAAA00A0022AEBA /* YZ_CityListTests.m */,
+				C23C5B0F1AAAA00A0022AEBA /* Supporting Files */,
+			);
+			path = YZ_CityListTests;
+			sourceTree = "<group>";
+		};
+		C23C5B0F1AAAA00A0022AEBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B101AAAA00A0022AEBA /* YZ_CityListTests-Info.plist */,
+				C23C5B111AAAA00A0022AEBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23C5B1E1AAAA03B0022AEBA /* YZ_CitysList */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B1F1AAAA03B0022AEBA /* C */,
+				C23C5B201AAAA03B0022AEBA /* M */,
+				C23C5B211AAAA03B0022AEBA /* V */,
+			);
+			name = YZ_CitysList;
+			path = YZ_CityList/YZ_CitysList;
+			sourceTree = "<group>";
+		};
+		C23C5B1F1AAAA03B0022AEBA /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B291AAAA1030022AEBA /* YZ_CityListTVC.h */,
+				C23C5B2A1AAAA1030022AEBA /* YZ_CityListTVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C23C5B201AAAA03B0022AEBA /* M */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B3C1AAAE48F0022AEBA /* cities.plist */,
+				C23C5B271AAAA09B0022AEBA /* YZ_HotCityListBtton.png */,
+				C23C5B221AAAA05C0022AEBA /* cities.json */,
+				C23C5B231AAAA05C0022AEBA /* YZ_CityModel.h */,
+				C23C5B241AAAA05C0022AEBA /* YZ_CityModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		C23C5B211AAAA03B0022AEBA /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B2C1AAAA1870022AEBA /* YZ_HotCityTableViewCell.h */,
+				C23C5B2D1AAAA1870022AEBA /* YZ_HotCityTableViewCell.m */,
+				C23C5B2E1AAAA1870022AEBA /* YZ_RecentlyTableViewCell.h */,
+				C23C5B2F1AAAA1870022AEBA /* YZ_RecentlyTableViewCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C23C5B321AAAA29B0022AEBA /* JsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				C23C5B331AAAA29B0022AEBA /* JSONKit.h */,
+				C23C5B341AAAA29B0022AEBA /* JSONKit.m */,
+			);
+			path = JsonKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23C5AE51AAAA00A0022AEBA /* YZ_CityList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23C5B181AAAA00A0022AEBA /* Build configuration list for PBXNativeTarget "YZ_CityList" */;
+			buildPhases = (
+				C23C5AE21AAAA00A0022AEBA /* Sources */,
+				C23C5AE31AAAA00A0022AEBA /* Frameworks */,
+				C23C5AE41AAAA00A0022AEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZ_CityList;
+			productName = YZ_CityList;
+			productReference = C23C5AE61AAAA00A0022AEBA /* YZ_CityList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C23C5B051AAAA00A0022AEBA /* YZ_CityListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23C5B1B1AAAA00A0022AEBA /* Build configuration list for PBXNativeTarget "YZ_CityListTests" */;
+			buildPhases = (
+				C23C5B021AAAA00A0022AEBA /* Sources */,
+				C23C5B031AAAA00A0022AEBA /* Frameworks */,
+				C23C5B041AAAA00A0022AEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23C5B0D1AAAA00A0022AEBA /* PBXTargetDependency */,
+			);
+			name = YZ_CityListTests;
+			productName = YZ_CityListTests;
+			productReference = C23C5B061AAAA00A0022AEBA /* YZ_CityListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23C5ADE1AAAA00A0022AEBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = k;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kong;
+				TargetAttributes = {
+					C23C5B051AAAA00A0022AEBA = {
+						TestTargetID = C23C5AE51AAAA00A0022AEBA;
+					};
+				};
+			};
+			buildConfigurationList = C23C5AE11AAAA00A0022AEBA /* Build configuration list for PBXProject "YZ_CityList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C23C5ADD1AAAA00A0022AEBA;
+			productRefGroup = C23C5AE71AAAA00A0022AEBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23C5AE51AAAA00A0022AEBA /* YZ_CityList */,
+				C23C5B051AAAA00A0022AEBA /* YZ_CityListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23C5AE41AAAA00A0022AEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5B251AAAA05C0022AEBA /* cities.json in Resources */,
+				C23C5AF61AAAA00A0022AEBA /* InfoPlist.strings in Resources */,
+				C23C5B011AAAA00A0022AEBA /* Images.xcassets in Resources */,
+				C23C5B3D1AAAE48F0022AEBA /* cities.plist in Resources */,
+				C23C5B281AAAA09B0022AEBA /* YZ_HotCityListBtton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23C5B041AAAA00A0022AEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5B131AAAA00A0022AEBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23C5AE21AAAA00A0022AEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5AFF1AAAA00A0022AEBA /* YZ_CityList.xcdatamodeld in Sources */,
+				C23C5B301AAAA1870022AEBA /* YZ_HotCityTableViewCell.m in Sources */,
+				C23C5B401AAAE64C0022AEBA /* YZ_CitySearchViewController.m in Sources */,
+				C23C5B261AAAA05C0022AEBA /* YZ_CityModel.m in Sources */,
+				C23C5B311AAAA1870022AEBA /* YZ_RecentlyTableViewCell.m in Sources */,
+				C23C5B3B1AAACDB50022AEBA /* YZ_TextViewController.m in Sources */,
+				C23C5AFC1AAAA00A0022AEBA /* kAppDelegate.m in Sources */,
+				C23C5AF81AAAA00A0022AEBA /* main.m in Sources */,
+				C23C5B351AAAA29B0022AEBA /* JSONKit.m in Sources */,
+				C23C5B2B1AAAA1030022AEBA /* YZ_CityListTVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23C5B021AAAA00A0022AEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23C5B151AAAA00A0022AEBA /* YZ_CityListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C23C5B0D1AAAA00A0022AEBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23C5AE51AAAA00A0022AEBA /* YZ_CityList */;
+			targetProxy = C23C5B0C1AAAA00A0022AEBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23C5AF41AAAA00A0022AEBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23C5AF51AAAA00A0022AEBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C23C5B111AAAA00A0022AEBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23C5B121AAAA00A0022AEBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23C5B161AAAA00A0022AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C23C5B171AAAA00A0022AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23C5B191AAAA00A0022AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YZ_CityList/YZ_CityList-Prefix.pch";
+				INFOPLIST_FILE = "YZ_CityList/YZ_CityList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C23C5B1A1AAAA00A0022AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YZ_CityList/YZ_CityList-Prefix.pch";
+				INFOPLIST_FILE = "YZ_CityList/YZ_CityList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C23C5B1C1AAAA00A0022AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YZ_CityList.app/YZ_CityList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YZ_CityList/YZ_CityList-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YZ_CityListTests/YZ_CityListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C23C5B1D1AAAA00A0022AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YZ_CityList.app/YZ_CityList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YZ_CityList/YZ_CityList-Prefix.pch";
+				INFOPLIST_FILE = "YZ_CityListTests/YZ_CityListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23C5AE11AAAA00A0022AEBA /* Build configuration list for PBXProject "YZ_CityList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23C5B161AAAA00A0022AEBA /* Debug */,
+				C23C5B171AAAA00A0022AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23C5B181AAAA00A0022AEBA /* Build configuration list for PBXNativeTarget "YZ_CityList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23C5B191AAAA00A0022AEBA /* Debug */,
+				C23C5B1A1AAAA00A0022AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23C5B1B1AAAA00A0022AEBA /* Build configuration list for PBXNativeTarget "YZ_CityListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23C5B1C1AAAA00A0022AEBA /* Debug */,
+				C23C5B1D1AAAA00A0022AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C23C5AFD1AAAA00A0022AEBA /* YZ_CityList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C23C5AFE1AAAA00A0022AEBA /* YZ_CityList.xcdatamodel */,
+			);
+			currentVersion = C23C5AFE1AAAA00A0022AEBA /* YZ_CityList.xcdatamodel */;
+			path = YZ_CityList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C23C5ADE1AAAA00A0022AEBA /* Project object */;
+}
